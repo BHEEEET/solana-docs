@@ -1,7 +1,7 @@
 # Solana Docs
 Educational content about the Solana Blockchain
 
-Table of contents
+## Table of contents
 - [SVM](./SVM.md)
     - [SBPF](./SVM.md#sbpf-virtual-machine-rbpf)
     - [Berkley Packet Filter](./SVM.md#berkley-packet-filter)
