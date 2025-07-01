@@ -1,5 +1,6 @@
 # Solana, How it works
-![[images/Pasted image 20250701125216.png]]
+![How Solana works](images/Pasted%20image%2020250701125216.png)
+
 
 ## Key concepts
 - Solana is a high performance, low-latency blockchain
@@ -23,7 +24,7 @@
 - Turbine
 - Block verification
 - Consensus
-![[images/Pasted image 20250701130701.png]]
+![Stages diagram](images/Pasted%20image%2020250701130701.png)
 
 ## Users
 
