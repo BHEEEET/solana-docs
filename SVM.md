@@ -1,4 +1,4 @@
-# SVM
+# Solana Virtual Machine (SVM)
 ## SBPF Virtual Machine rBPF
 repo: https://github.com/anza-xyz/sbpf 
 
@@ -135,7 +135,7 @@ low byte                                          high byte
 
 ```
 
-Hex instruction
+Instruction HEX formatting
 ```
 CALL = 0x85
 0x85 → binary 1000 0101
@@ -154,4 +154,27 @@ Lower bits: 0x5 → column ·5
 - Defines rules by verifying an eBPF program
 
 ## Solana VM Builtin Programs (Loaders)
+- The functions within a compiled eBPF program are read into a *function registry* when the binary is loaded by the eBPF VM
+- But the rBPF VM supports *builtin program*, which also have their own function registries
+- Solana native programs = provide access to  functions built into the execution environment
+    - When a instruction for a builtin program is called, it does not load dand execute some compiled BPF program, it calss a function that is built into the runtime
+    - These programs do not exist on-chain, but have an on-chain placeholder at their corresponding address
+    - It's code ships with the Solana runtime
+    - Built into the VM
 
+- Loader = VM-level builtin program, which gives executable access to the set of builtin functions
+- Builtin functions = There are many tupes of VM builtin functions, but the primary provided by the VM loader are system calls (syscalls)
+- Syscalls = allow executing eBPF programs to call fucntions outsidde their compiled bytecode, built into the virtual machine, to do things as:
+    - Print log messages `sol_log`
+    - Invoke other Solana programs (CPI) `sol_invoke`
+    - Perform cryptographic arithmetic operations 
+- Solana protocol syscall interfaces repo: https://github.com/anza-xyz/agave/blob/a5b3c2b7e0aa761d8d8107c19b8fb8c2a9bdaa78/sdk/program/src/syscalls/definitions.rs
+- Changes to the syscalls are governed by the Solana Improvement Documents (SIMD) process
+- The Agave validator implements all Solana syscalls on the BPF loader
+    - Validators can be lagging if they don't upgrade after a SIMD
+- BPF Loader = runtime builtin programs
+
+## Program Execution
+- the rBPF VM library can execute eBPF programs in 2 ways
+    - Interpreter
+    - JIT compilation to x86_64 machine code
