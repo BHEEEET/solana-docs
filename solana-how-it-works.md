@@ -1,5 +1,6 @@
 # Solana, How it works
-![[Pasted image 20250701125216.png]]
+![[images/Pasted image 20250701125216.png]]
+
 ## Key concepts
 - Solana is a high performance, low-latency blockchain
 - Block time of 400 miliseconds
@@ -22,7 +23,7 @@
 - Turbine
 - Block verification
 - Consensus
-![[Pasted image 20250701130701.png]]
+![[images/Pasted image 20250701130701.png]]
 
 ## Users
 
