@@ -1,4 +1,5 @@
 # Proof of History
+souce: https://solana.com/news/proof-of-history 
 ## Time keeping
 - Computers worldwide synchronize time with: 
     - **RTC (Real-Time-Clock) - Local Hardware**
