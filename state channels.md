@@ -31,3 +31,4 @@ To close the channel:
 Examples: payment channels, state channels
 
 ## Payment channels
+A payment channel is best described as a "two-way ledger" collectively maintained by two users. The ledgers initial balance is the sum of deposits locked into the on-chain contract during the channel opening phase
