@@ -35,9 +35,19 @@ Transactions:
 - The SVM interface used by the Bank has been decoupled from Bank significantly
 
 ## Opportunities for SVM
-- Off-Chain services:
-- Diet Clients:
-- State Channels:
-- Rollups:
-- Avalanche Subnet:
-- Extended SVM
+- **Off-Chain services:**
+	- Emulate Solana transaction processing protocol off-chain
+	- Pro:
+		- Useful for simulating transactions
+		- fuzzing/ testing
+	- Examples:
+		- RPC v2 
+- **Diet Clients:**
+	- Creation of fraud proofs to demonstrate invalid state transitions by supermajority
+	- Pro:
+		- Lightweight clients can more efficiently without needing to process every transaction or maintain the full blockchain state
+- **State Channels:**
+	- 
+- **Rollups:**
+- **Avalanche Subnet:**
+- **Extended SVM**
