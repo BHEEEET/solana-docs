@@ -31,4 +31,17 @@ To close the channel:
 Examples: payment channels, state channels
 
 ## Payment channels
-A payment channel is best described as a "two-way ledger" collectively maintained by two users. The ledgers initial balance is the sum of deposits locked into the on-chain contract during the channel opening phase
+A payment channel is best described as a "two-way ledger" collectively maintained by two users. 
+
+The ledgers initial balance is the sum of deposits locked into the on-chain contract during the channel opening phase
+- Can be performed instantaneously and without involvement of the blockchain
+- Except for an initial one-time on-chain creation and eventual closing of the channel
+
+Updates to ledger balance:
+- requires  approval of all parties in the channel
+
+Payment channel participants can conduct unlimited amount of instant, feeless transactions between each other, as long as the net sum of their transfers does not exceed the deposited tokens.
+
+## State channels
+
+**WORK FURTHER HERE**
