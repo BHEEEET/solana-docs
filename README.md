@@ -2,10 +2,10 @@
 Educational content about the Solana Blockchain
 
 ## Table of contents
-- [SVM](./SVM.md)
-    - [SBPF](./SVM.md#sbpf-virtual-machine-rbpf)
-    - [Berkley Packet Filter](./SVM.md#berkley-packet-filter)
-    - [Solana rBPF ISA](./SVM.md#solana-rbpf-isa)
+- [evpf-svm](evpf-svm.md)
+    - [SBPF](evpf-svm.md#sbpf-virtual-machine-rbpf)
+    - [Berkley Packet Filter](evpf-svm.md#berkley-packet-filter)
+    - [Solana rBPF ISA](evpf-svm.md#solana-rbpf-isa)
 
 
 ## Sources
